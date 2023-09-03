@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 class CryptoCoinsRepository {
   Future<List<CryptoCoin>> getCoinsList() async {
     final response = await Dio().get(
-        "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,BNB,AVAX,AID,AOA,SOL,CAG,DOV&tsyms=USD"
+        "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,BNB,AVAX,AID,SOL,CAG,DOV&tsyms=USD"
     );
 
     final data = response.data as Map<String, dynamic>;

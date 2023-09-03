@@ -3,27 +3,27 @@ import 'package:flutter/material.dart';
 final darkTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
   appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.grey,
-      elevation: 0,
+      backgroundColor: Colors.yellow,
       titleTextStyle: TextStyle(
-          color: Colors.white,
+          color: Colors.black,
           fontSize: 24,
           fontWeight: FontWeight.bold
-      )
+      ),
+      iconTheme: IconThemeData(color: Colors.black)
   ),
-  scaffoldBackgroundColor: Colors.grey,
-  listTileTheme: const ListTileThemeData(iconColor: Colors.white),
+  scaffoldBackgroundColor: Colors.white,
+  listTileTheme: const ListTileThemeData(iconColor: Colors.black),
   textTheme: TextTheme(
       bodyMedium: const TextStyle(
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.w500,
           fontSize: 20
       ),
       labelSmall: TextStyle(
-          color: Colors.white.withOpacity(0.6),
+          color: Colors.black.withOpacity(0.6),
           fontWeight: FontWeight.w700,
           fontSize: 14
       )
   ),
-  // useMaterial3: true,
+  useMaterial3: true,
 );
