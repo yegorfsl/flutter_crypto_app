@@ -1,6 +1,5 @@
 import 'package:crypto_list_first_app/repositories/crypto_coins/models/crypto_coin.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter/cupertino.dart';
 
 class CryptoCoinsRepository {
   Future<List<CryptoCoin>> getCoinsList() async {
