@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 final darkTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
+  useMaterial3: true,
   appBarTheme: const AppBarTheme(
       backgroundColor: Colors.yellow,
       titleTextStyle: TextStyle(
@@ -25,5 +26,4 @@ final darkTheme = ThemeData(
           fontSize: 14
       )
   ),
-  useMaterial3: true,
 );
