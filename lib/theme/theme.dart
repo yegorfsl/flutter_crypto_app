@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 final darkTheme = ThemeData(
+  // Global settings
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
   useMaterial3: true,
+  scaffoldBackgroundColor: Colors.white,
+  // App Theme
   appBarTheme: const AppBarTheme(
       backgroundColor: Colors.yellow,
       titleTextStyle: TextStyle(
@@ -12,8 +15,9 @@ final darkTheme = ThemeData(
       ),
       iconTheme: IconThemeData(color: Colors.black)
   ),
-  scaffoldBackgroundColor: Colors.white,
+  // List Tile Theme
   listTileTheme: const ListTileThemeData(iconColor: Colors.black),
+  // Text Theme
   textTheme: TextTheme(
       bodyMedium: const TextStyle(
           color: Colors.black,
