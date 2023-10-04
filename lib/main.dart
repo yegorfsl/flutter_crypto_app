@@ -21,10 +21,9 @@ void main() async {
   GetIt.I.registerSingleton(talker);
   GetIt.I<Talker>().info('Talker started...');
 
-  final app = await Firebase.initializeApp(
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  talker.info(app.options.projectId);
 
   final dio = Dio();
   dio.interceptors.add(
