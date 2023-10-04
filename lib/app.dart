@@ -9,6 +9,7 @@ class CryptoListFirstApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Crypto List",
       theme: darkTheme,
       routes: routes,
